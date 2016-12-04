@@ -70,3 +70,12 @@ void __fastcall TForm2::Button2Click(TObject *Sender)
 }
 //---------------------------------------------------------------------------
 
+void __fastcall TForm2::FormKeyPress(TObject *Sender, System::WideChar &Key)
+{
+
+	if (Key == 13) {    //enter
+        Button1->Click();
+	}
+}
+//---------------------------------------------------------------------------
+

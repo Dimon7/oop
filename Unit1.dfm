@@ -1,6 +1,7 @@
 object Form1: TForm1
   Left = 0
   Top = 0
+  Cursor = crArrow
   Caption = 'Shedule'
   ClientHeight = 600
   ClientWidth = 975
@@ -10,13 +11,17 @@ object Form1: TForm1
   Font.Height = -11
   Font.Name = 'Tahoma'
   Font.Style = []
+  KeyPreview = True
   OldCreateOrder = False
+  OnActivate = FormActivate
   OnCreate = FormCreate
+  OnKeyPress = FormKeyPress
+  OnMouseMove = FormMouseMove
   PixelsPerInch = 96
   TextHeight = 13
   object Label1: TLabel
     Left = 24
-    Top = 491
+    Top = 515
     Width = 37
     Height = 20
     Caption = #1055#1086#1083#1077
@@ -29,7 +34,7 @@ object Form1: TForm1
   end
   object Label2: TLabel
     Left = 339
-    Top = 439
+    Top = 443
     Width = 118
     Height = 18
     Caption = #1044#1086#1076#1072#1090#1080' '#1085#1086#1074#1110' '#1087#1086#1083#1103
@@ -42,7 +47,7 @@ object Form1: TForm1
   end
   object Label3: TLabel
     Left = 488
-    Top = 439
+    Top = 443
     Width = 102
     Height = 18
     Caption = #1042#1080#1076#1072#1083#1080#1090#1080' '#1087#1086#1083#1103
@@ -52,6 +57,13 @@ object Form1: TForm1
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
+  end
+  object Label4: TLabel
+    Left = 632
+    Top = 456
+    Width = 89
+    Height = 33
+    Caption = 'Label4'
   end
   object DBGrid1: TDBGrid
     Left = 0
@@ -139,8 +151,8 @@ object Form1: TForm1
       end>
   end
   object DBNavigator1: TDBNavigator
-    Left = 339
-    Top = 255
+    Left = 627
+    Top = 519
     Width = 240
     Height = 25
     DataSource = DataSource1
@@ -149,9 +161,10 @@ object Form1: TForm1
   end
   object Button1: TButton
     Left = 878
-    Top = 567
+    Top = 569
     Width = 75
     Height = 25
+    Cursor = crHandPoint
     Caption = 'Close'
     TabOrder = 2
     OnClick = Button1Click
@@ -174,45 +187,49 @@ object Form1: TForm1
     TabOrder = 4
   end
   object Edit2: TEdit
-    Left = 162
-    Top = 494
-    Width = 145
+    Left = 184
+    Top = 439
+    Width = 90
     Height = 21
     TabOrder = 5
     OnChange = Edit2Change
   end
   object Button3: TButton
-    Left = 24
-    Top = 541
-    Width = 75
-    Height = 53
-    Caption = 'AND'
+    Left = 50
+    Top = 439
+    Width = 25
+    Height = 23
+    Cursor = crHandPoint
+    Caption = '+'
     TabOrder = 6
     OnClick = Button3Click
   end
   object Button4: TButton
-    Left = 232
-    Top = 541
+    Left = 136
+    Top = 539
     Width = 75
     Height = 53
+    Cursor = crHandPoint
     Caption = 'Clear'
     TabOrder = 7
     OnClick = Button4Click
   end
   object Button5: TButton
     Left = 339
-    Top = 492
+    Top = 496
     Width = 75
     Height = 25
+    Cursor = crHandPoint
     Caption = '+'
     TabOrder = 8
     OnClick = Button5Click
   end
   object ComboBox1: TComboBox
-    Left = 24
-    Top = 440
-    Width = 283
+    Left = 81
+    Top = 439
+    Width = 97
     Height = 21
+    Cursor = crHandPoint
     TabOrder = 9
     Text = #1042#1080#1073#1110#1088#1082#1072
     OnClick = ComboBox1Click
@@ -223,12 +240,35 @@ object Form1: TForm1
   end
   object Button6: TButton
     Left = 504
-    Top = 492
+    Top = 496
     Width = 75
     Height = 25
+    Cursor = crHandPoint
     Caption = '-'
     TabOrder = 10
     OnClick = Button6Click
+  end
+  object Edit3: TEdit
+    Left = 536
+    Top = 568
+    Width = 121
+    Height = 21
+    TabOrder = 11
+  end
+  object Edit4: TEdit
+    Left = 392
+    Top = 568
+    Width = 121
+    Height = 21
+    TabOrder = 12
+  end
+  object Edit5: TEdit
+    Left = 136
+    Top = 504
+    Width = 121
+    Height = 21
+    TabOrder = 13
+    Text = 'Edit5'
   end
   object ADOConnection1: TADOConnection
     Connected = True
@@ -246,8 +286,8 @@ object Form1: TForm1
     LoginPrompt = False
     Mode = cmShareDenyNone
     Provider = 'Microsoft.Jet.OLEDB.4.0'
-    Left = 912
-    Top = 384
+    Left = 840
+    Top = 448
   end
   object DataSource1: TDataSource
     DataSet = ADOQuery1
@@ -261,7 +301,7 @@ object Form1: TForm1
     Parameters = <>
     SQL.Strings = (
       'Select * From Shedule'
-      'Where Grup="242"'
+      'Where Grup Like '#39'%242%'#39' AND Kathedra Like '#39'%KS%'#39
       'Order By Para ASC')
     Left = 912
     Top = 512

@@ -1,7 +1,7 @@
 object Form2: TForm2
   Left = 0
   Top = 0
-  Caption = #1044#1086#1076#1072#1090#1080' '#1085#1086#1074#1110' '#1087#1086#1083#1103
+  Caption = #1044#1086#1076#1072#1090#1080' '#1085#1086#1074#1080#1081' '#1088#1086#1079#1082#1083#1072#1076
   ClientHeight = 201
   ClientWidth = 719
   Color = clBtnFace
@@ -10,7 +10,9 @@ object Form2: TForm2
   Font.Height = -11
   Font.Name = 'Tahoma'
   Font.Style = []
+  KeyPreview = True
   OldCreateOrder = False
+  OnKeyPress = FormKeyPress
   PixelsPerInch = 96
   TextHeight = 13
   object Label1: TLabel
