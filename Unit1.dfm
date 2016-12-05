@@ -35,7 +35,7 @@ object Form1: TForm1
   end
   object Label4: TLabel
     Left = 27
-    Top = 496
+    Top = 589
     Width = 31
     Height = 13
     Caption = 'Label4'
@@ -255,7 +255,7 @@ object Form1: TForm1
     Parameters = <>
     SQL.Strings = (
       'Select * From Shedule'
-      'Where Grup Like '#39'%242%'#39' AND Kathedra Like '#39'%KS%'#39
+      ''
       'Order By Para ASC')
     Left = 704
     Top = 416
