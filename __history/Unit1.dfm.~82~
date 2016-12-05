@@ -59,10 +59,10 @@ object Form1: TForm1
     ParentFont = False
   end
   object Label4: TLabel
-    Left = 632
-    Top = 456
-    Width = 89
-    Height = 33
+    Left = 339
+    Top = 467
+    Width = 31
+    Height = 13
     Caption = 'Label4'
   end
   object DBGrid1: TDBGrid
@@ -171,13 +171,12 @@ object Form1: TForm1
   end
   object Button2: TButton
     Left = 24
-    Top = 222
-    Width = 283
-    Height = 58
+    Top = 232
+    Width = 57
+    Height = 48
     Caption = 'Sort'
     TabOrder = 3
     Visible = False
-    OnClick = Button2Click
   end
   object Edit1: TEdit
     Left = 698
@@ -187,26 +186,25 @@ object Form1: TForm1
     TabOrder = 4
   end
   object Edit2: TEdit
-    Left = 184
-    Top = 439
+    Left = 24
+    Top = 488
     Width = 90
     Height = 21
     TabOrder = 5
-    OnChange = Edit2Change
   end
   object Button3: TButton
-    Left = 24
-    Top = 541
-    Width = 75
-    Height = 53
+    Left = 18
+    Top = 439
+    Width = 25
+    Height = 23
     Cursor = crHandPoint
-    Caption = 'AND'
+    Caption = '+'
     TabOrder = 6
     OnClick = Button3Click
   end
   object Button4: TButton
-    Left = 232
-    Top = 541
+    Left = 136
+    Top = 539
     Width = 75
     Height = 53
     Cursor = crHandPoint
@@ -225,7 +223,7 @@ object Form1: TForm1
     OnClick = Button5Click
   end
   object ComboBox1: TComboBox
-    Left = 40
+    Left = 49
     Top = 439
     Width = 97
     Height = 21
@@ -269,6 +267,14 @@ object Form1: TForm1
     Height = 21
     TabOrder = 13
     Text = 'Edit5'
+  end
+  object ComboBox2: TComboBox
+    Left = 162
+    Top = 439
+    Width = 95
+    Height = 21
+    TabOrder = 14
+    OnClick = ComboBox2Click
   end
   object ADOConnection1: TADOConnection
     Connected = True

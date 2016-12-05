@@ -10,7 +10,6 @@
 #pragma package(smart_init)
 #pragma resource "*.dfm"
 TForm1 *Form1;
-
 AnsiString Query="";
 AnsiString Query_Grup="";
 AnsiString Query_Kathedra = "";
@@ -18,7 +17,6 @@ AnsiString Query_Faculty = "";
 int Count;
 String and;
 String C;
-
 // ---------------------------------------------------------------------------
 __fastcall TForm1::TForm1(TComponent* Owner) : TForm(Owner) {
 }
@@ -62,10 +60,8 @@ void __fastcall TForm1::Button4Click(TObject *Sender)
 	ADOQuery1->SQL->Add("Select * From Shedule Order By Para ASC ");
 	ADOQuery1->Open();
 
-
-	ComboBox2->Clear();
 	Query = "Select * From Shedule WHERE ";
-    Label4->Caption = Query;
+
 
 }
 //---------------------------------------------------------------------------
