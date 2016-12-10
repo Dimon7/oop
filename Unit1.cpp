@@ -100,6 +100,11 @@ void __fastcall TForm1::ComboBox1Click(TObject *Sender)
 
 		ComboBox2->Clear();
 
+		ADOQuery1->Close();
+		ADOQuery1->SQL->Clear();
+		ADOQuery1->SQL->Add("Select Distinct " + C + " From Shedule Order By "+ C +" ASC");
+		ADOQuery1->Open();
+
 		ADOQuery1->First();
 		while (!ADOQuery1->Eof){
 		  ComboBox2->Items->Add(ADOQuery1->FieldByName(C)->Value);
@@ -107,6 +112,10 @@ void __fastcall TForm1::ComboBox1Click(TObject *Sender)
 		  ADOQuery1->Next();
 		}
 
+		ADOQuery1->Close();
+		ADOQuery1->SQL->Clear();
+		ADOQuery1->SQL->Add("Select * From Shedule Order By Para ASC");
+		ADOQuery1->Open();
 
 }
 //---------------------------------------------------------------------------
@@ -175,7 +184,19 @@ void __fastcall TForm1::ComboBox2Click(TObject *Sender)
 	ADOQuery1->SQL->Add(Query);
 	ADOQuery1->Open();
 
+}
+//---------------------------------------------------------------------------
 
+
+
+
+void __fastcall TForm1::DBGrid1TitleClick(TColumn *Column)
+{
+		String S = Column->Field->FullName;
+		ADOQuery1->Close();
+		ADOQuery1->SQL->Clear();
+		ADOQuery1->SQL->Add("Select * From Shedule Order By "+ S +" ASC");
+		ADOQuery1->Open();
 
 
 }

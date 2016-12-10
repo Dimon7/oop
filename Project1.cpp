@@ -15,7 +15,7 @@ int WINAPI _tWinMain(HINSTANCE, HINSTANCE, LPTSTR, int)
 	{
 		Application->Initialize();
 		Application->MainFormOnTaskBar = true;
-		TStyleManager::TrySetStyle("Cyan Night");
+		TStyleManager::TrySetStyle("Slate Classico");
 		Application->Title = "Розклад";
 		Application->CreateForm(__classid(TForm1), &Form1);
 		Application->CreateForm(__classid(TForm2), &Form2);

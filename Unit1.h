@@ -13,6 +13,7 @@
 #include <Vcl.DBGrids.hpp>
 #include <Vcl.ExtCtrls.hpp>
 #include <Vcl.Grids.hpp>
+#include <Vcl.Imaging.pngimage.hpp>
 //---------------------------------------------------------------------------
 class TForm1 : public TForm
 {
@@ -22,15 +23,15 @@ __published:	// IDE-managed Components
 	TDBGrid *DBGrid1;
 	TDBNavigator *DBNavigator1;
 	TButton *Button1;
-	TButton *Button3;
 	TButton *Button4;
 	TButton *Button5;
 	TADOQuery *ADOQuery1;
 	TComboBox *ComboBox1;
-	TLabel *Label2;
 	TButton *Button6;
 	TLabel *Label4;
 	TComboBox *ComboBox2;
+	TBevel *Bevel1;
+	TBevel *Bevel2;
 	void __fastcall Button1Click(TObject *Sender);
 	void __fastcall FormCreate(TObject *Sender);
 	void __fastcall Button3Click(TObject *Sender);
@@ -42,6 +43,7 @@ __published:	// IDE-managed Components
 	void __fastcall FormMouseMove(TObject *Sender, TShiftState Shift, int X, int Y);
 	void __fastcall FormActivate(TObject *Sender);
 	void __fastcall ComboBox2Click(TObject *Sender);
+	void __fastcall DBGrid1TitleClick(TColumn *Column);
 
 private:	// User declarations
 public:		// User declarations

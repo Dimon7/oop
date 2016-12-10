@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
 	<Transactions>
-    <Transaction>2016/11/26 12:58:47.000.264,=C:\Users\dimon\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
     <Transaction>2016/11/26 12:58:47.000.313,=C:\Users\dimon\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
-    <Transaction>2016/11/26 13:14:05.000.103,C:\Users\dimon\Documents\Embarcadero\Studio\Projects\Unit1.h=C:\Users\dimon\Documents\Embarcadero\Studio\Projects\oop\Unit1.h</Transaction>
-    <Transaction>2016/11/26 13:14:05.000.103,C:\Users\dimon\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\dimon\Documents\Embarcadero\Studio\Projects\oop\Unit1.dfm</Transaction>
-    <Transaction>2016/11/26 13:14:05.000.103,C:\Users\dimon\Documents\Embarcadero\Studio\Projects\Unit1.cpp=C:\Users\dimon\Documents\Embarcadero\Studio\Projects\oop\Unit1.cpp</Transaction>
-    <Transaction>2016/11/26 13:14:06.000.684,C:\Users\dimon\Documents\Embarcadero\Studio\Projects\Project1PCH1.h=C:\Users\dimon\Documents\Embarcadero\Studio\Projects\oop\Project1PCH1.h</Transaction>
-    <Transaction>2016/11/26 13:14:08.000.287,C:\Users\dimon\Documents\Embarcadero\Studio\Projects\Project1.cbproj=C:\Users\dimon\Documents\Embarcadero\Studio\Projects\oop\Project1.cbproj</Transaction>
+    <Transaction>2016/11/26 12:58:47.000.264,=C:\Users\dimon\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2016/11/26 13:14:05.000.103,C:\Users\dimon\Documents\Embarcadero\Studio\Projects\oop\Unit1.dfm=C:\Users\dimon\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2016/11/26 13:14:05.000.103,C:\Users\dimon\Documents\Embarcadero\Studio\Projects\oop\Unit1.cpp=C:\Users\dimon\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>2016/11/26 13:14:05.000.103,C:\Users\dimon\Documents\Embarcadero\Studio\Projects\oop\Unit1.h=C:\Users\dimon\Documents\Embarcadero\Studio\Projects\Unit1.h</Transaction>
+    <Transaction>2016/11/26 13:14:06.000.684,C:\Users\dimon\Documents\Embarcadero\Studio\Projects\oop\Project1PCH1.h=C:\Users\dimon\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2016/11/26 13:14:08.000.287,C:\Users\dimon\Documents\Embarcadero\Studio\Projects\oop\Project1.cbproj=C:\Users\dimon\Documents\Embarcadero\Studio\Projects\Project1.cbproj</Transaction>
     <Transaction>2016/11/26 14:01:25.000.669,=C:\Users\dimon\Documents\Embarcadero\Studio\Projects\oop\Unit2.cpp</Transaction>
     <Transaction>2016/11/26 14:05:56.000.260,=C:\Users\dimon\Documents\Embarcadero\Studio\Projects\oop\Unit2.cpp</Transaction>
   </Transactions>

@@ -19,17 +19,9 @@ void __fastcall TForm2::Button1Click(TObject *Sender)
 {
 	Form1->ADOQuery1->Close();
 	Form1->ADOQuery1->SQL->Clear();
-//	Form1->ADOQuery1->SQL->Add("Select * From Shedule Order By Para ASC ");
-//	Form1->ADOQuery1->SQL->Add("INSERT INTO Shedule(Para, Monday, Thuesday, Wendsday, Thursday, Friday, Grup, Kathedra, Faculty) VALUES('1','Фізика','a','m','c','k','t','o','p');");
 	AnsiString *S;
 	S = new AnsiString[10];
 
-//	String K = QuotedStr(Edit2->Text);
-//	Form1->ADOQuery1->SQL->Add("INSERT INTO Shedule(Para, Monday) VALUES('1', " + K   + ");");
-
-//	Form1->ADOQuery1->Parameters[0]->Value=10;
-//	Form1->ADOQuery1->/Parameters->ParamByName();
-//	Form1->ADOQuery1->Parameters->ParamByName("Para")->Value = Edit1->Text;
 
 		S[0] = QuotedStr(Edit1->Text);
 		S[1] = QuotedStr(Edit2->Text);
@@ -43,23 +35,13 @@ void __fastcall TForm2::Button1Click(TObject *Sender)
 
 
 Form1->ADOQuery1->SQL->Add("INSERT INTO Shedule(Para, Monday, Thuesday, Wendsday, Thursday, Friday, Grup, Kathedra, Faculty) VALUES(" + S[0] + "," + S[1] + "," + S[2] +"," + S[3] + "," + S[4] + "," + S[5] + "," + S[6] + "," + S[7] + "," + S[8] + ");");
-//	Form1->ADOQuery1->Parameters->ParamByName("Thuesday")->Value = Edit3->Text;
-//	Form1->ADOQuery1->Parameters->ParamByName("Wendsday")->Value = Edit4->Text;
-//	Form1->ADOQuery1->Parameters->ParamByName("Thursday")->Value = Edit5->Text;
-//	Form1->ADOQuery1->Parameters->ParamByName("Friday")->Value = Edit6->Text;
-//	Form1->ADOQuery1->Parameters->ParamByName("Grup")->Value = Edit7->Text;
-//	Form1->ADOQuery1->Parameters->ParamByName("Kathedra")->Value = Edit8->Text;
-//	Form1->ADOQuery1->Parameters->ParamByName("Faculty")->Value = Edit9->Text;
-//	Form1->ADOQuery1->SQL->Add("Select * From Shedule Order By Para ASC;");
-//	Form1->ADOQuery1->Open();
+
+
 	Form1->ADOQuery1->ExecSQL();
 	Form1->ADOQuery1->Close();
 	Form1->ADOQuery1->SQL->Clear();
 	Form1->ADOQuery1->SQL->Add("Select * From Shedule Order By Para ASC;");
 	Form1->ADOQuery1->Open();
-//	Form1->ADOQuery1->SQL->Text="Select * from Shedule Where Grup='242'";
-//	Form1->ADOQuery1->ExecSQL();
-//	Form1->ADOQuery1->Active = true;
 }
 //---------------------------------------------------------------------------
 
@@ -76,6 +58,15 @@ void __fastcall TForm2::FormKeyPress(TObject *Sender, System::WideChar &Key)
 	if (Key == 13) {    //enter
         Button1->Click();
 	}
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm2::FormMouseMove(TObject *Sender, TShiftState Shift, int X, int Y)
+
+{
+	const int SC_DRAGMOVE = 0xF012;
+	ReleaseCapture();
+	Perform(WM_SYSCOMMAND, SC_DRAGMOVE, 0);
 }
 //---------------------------------------------------------------------------
 

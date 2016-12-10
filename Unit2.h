@@ -34,6 +34,8 @@ __published:	// IDE-managed Components
 	void __fastcall Button1Click(TObject *Sender);
 	void __fastcall Button2Click(TObject *Sender);
 	void __fastcall FormKeyPress(TObject *Sender, System::WideChar &Key);
+	void __fastcall FormMouseMove(TObject *Sender, TShiftState Shift, int X, int Y);
+
 private:	// User declarations
 public:		// User declarations
 	__fastcall TForm2(TComponent* Owner);

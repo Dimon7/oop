@@ -14,6 +14,7 @@ object Form2: TForm2
   KeyPreview = True
   OldCreateOrder = False
   OnKeyPress = FormKeyPress
+  OnMouseMove = FormMouseMove
   PixelsPerInch = 96
   TextHeight = 13
   object Label1: TLabel

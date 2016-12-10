@@ -5,8 +5,8 @@ object Form1: TForm1
   BorderStyle = bsSingle
   Caption = 'Shedule'
   ClientHeight = 610
-  ClientWidth = 985
-  Color = clBtnFace
+  ClientWidth = 1001
+  Color = clWhite
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -11
@@ -20,19 +20,6 @@ object Form1: TForm1
   OnMouseMove = FormMouseMove
   PixelsPerInch = 96
   TextHeight = 13
-  object Label2: TLabel
-    Left = 547
-    Top = 497
-    Width = 180
-    Height = 18
-    Caption = #1044#1086#1076#1072#1090#1080'/'#1042#1080#1076#1072#1083#1080#1090#1080' '#1056#1086#1079#1082#1083#1072#1076
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -15
-    Font.Name = 'Tahoma'
-    Font.Style = []
-    ParentFont = False
-  end
   object Label4: TLabel
     Left = 27
     Top = 589
@@ -40,10 +27,22 @@ object Form1: TForm1
     Height = 13
     Caption = 'Label4'
   end
+  object Bevel1: TBevel
+    Left = 8
+    Top = 521
+    Width = 537
+    Height = 62
+  end
+  object Bevel2: TBevel
+    Left = 551
+    Top = 521
+    Width = 259
+    Height = 62
+  end
   object DBGrid1: TDBGrid
     Left = 0
     Top = 0
-    Width = 985
+    Width = 1001
     Height = 484
     Align = alTop
     DataSource = DataSource1
@@ -53,6 +52,7 @@ object Form1: TForm1
     TitleFont.Height = -11
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
+    OnTitleClick = DBGrid1TitleClick
     Columns = <
       item
         Alignment = taCenter
@@ -135,49 +135,39 @@ object Form1: TForm1
     Visible = False
   end
   object Button1: TButton
-    Left = 864
-    Top = 535
-    Width = 55
+    Left = 825
+    Top = 533
+    Width = 145
     Height = 38
     Cursor = crHandPoint
-    Caption = 'Close'
+    Caption = #1047#1072#1082#1088#1080#1090#1080' '#1087#1088#1086#1075#1088#1072#1084#1091
+    Font.Charset = JOHAB_CHARSET
+    Font.Color = clRed
+    Font.Height = -15
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
     TabOrder = 2
     OnClick = Button1Click
   end
-  object Button3: TButton
-    Left = 328
-    Top = 535
-    Width = 55
-    Height = 38
-    Cursor = crHandPoint
-    Caption = '+'
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = 30
-    Font.Name = 'Tahoma'
-    Font.Style = [fsBold]
-    ParentFont = False
-    TabOrder = 3
-    OnClick = Button3Click
-  end
   object Button4: TButton
-    Left = 397
+    Left = 391
     Top = 535
-    Width = 55
+    Width = 142
     Height = 38
     Cursor = crHandPoint
-    Caption = 'UPD'
-    TabOrder = 4
+    Caption = #1054#1095#1080#1089#1090#1080#1090#1080'/'#1054#1085#1086#1074#1080#1090#1080
+    TabOrder = 3
     OnClick = Button4Click
   end
   object Button5: TButton
-    Left = 547
+    Left = 571
     Top = 535
-    Width = 55
+    Width = 110
     Height = 38
     Cursor = crHandPoint
-    Caption = 'Add'
-    TabOrder = 5
+    Caption = #1044#1086#1076#1072#1090#1080' '#1088#1086#1079#1082#1083#1072#1076
+    TabOrder = 4
     OnClick = Button5Click
   end
   object ComboBox1: TComboBox
@@ -192,7 +182,7 @@ object Form1: TForm1
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-    TabOrder = 6
+    TabOrder = 5
     Text = #1042#1080#1073#1110#1088#1082#1072
     OnClick = ComboBox1Click
     Items.Strings = (
@@ -201,19 +191,19 @@ object Form1: TForm1
       #1060#1072#1082#1091#1083#1100#1090#1077#1090)
   end
   object Button6: TButton
-    Left = 672
+    Left = 687
     Top = 535
-    Width = 55
+    Width = 113
     Height = 38
     Cursor = crHandPoint
-    Caption = '-'
-    TabOrder = 7
+    Caption = #1042#1080#1076#1072#1083#1080#1090#1080' '#1088#1086#1079#1082#1083#1072#1076
+    TabOrder = 6
     OnClick = Button6Click
   end
   object ComboBox2: TComboBox
-    Left = 210
+    Left = 201
     Top = 535
-    Width = 95
+    Width = 184
     Height = 38
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
@@ -221,7 +211,7 @@ object Form1: TForm1
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-    TabOrder = 8
+    TabOrder = 7
     OnClick = ComboBox2Click
   end
   object ADOConnection1: TADOConnection
@@ -240,13 +230,13 @@ object Form1: TForm1
     LoginPrompt = False
     Mode = cmShareDenyNone
     Provider = 'Microsoft.Jet.OLEDB.4.0'
-    Left = 776
-    Top = 416
+    Left = 760
+    Top = 408
   end
   object DataSource1: TDataSource
     DataSet = ADOQuery1
     Left = 848
-    Top = 424
+    Top = 408
   end
   object ADOQuery1: TADOQuery
     Active = True
@@ -257,7 +247,7 @@ object Form1: TForm1
       'Select * From Shedule'
       ''
       'Order By Para ASC')
-    Left = 704
-    Top = 416
+    Left = 672
+    Top = 408
   end
 end

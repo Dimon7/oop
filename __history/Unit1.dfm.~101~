@@ -1,0 +1,313 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Cursor = crArrow
+  BorderStyle = bsSingle
+  Caption = 'Shedule'
+  ClientHeight = 610
+  ClientWidth = 985
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  KeyPreview = True
+  OldCreateOrder = False
+  OnActivate = FormActivate
+  OnCreate = FormCreate
+  OnKeyPress = FormKeyPress
+  OnMouseMove = FormMouseMove
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label2: TLabel
+    Left = 547
+    Top = 497
+    Width = 180
+    Height = 18
+    Caption = #1044#1086#1076#1072#1090#1080'/'#1042#1080#1076#1072#1083#1080#1090#1080' '#1056#1086#1079#1082#1083#1072#1076
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label4: TLabel
+    Left = 27
+    Top = 589
+    Width = 31
+    Height = 13
+    Caption = 'Label4'
+  end
+  object Image1: TImage
+    Left = 400
+    Top = 535
+    Width = 50
+    Height = 50
+    AutoSize = True
+    Picture.Data = {
+      0954506E67496D61676589504E470D0A1A0A0000000D49484452000000320000
+      003208060000001E3F88B1000000097048597300000B1300000B1301009A9C18
+      000004A84944415478DAD59A6D88545518C7FF77665FDC88C2324C113F642F1B
+      8A6BE59AEE2E899AE487924A08B2778A12344834B3D5A414916D4DD00A058BA0
+      A277B1F25390B542366BAEB641494550D6AE1AF982ADBA3BB33373FBFFEF9D81
+      69DADD39337366A6FB0C3FB8CBDEB7DFBDE7DEFB9CE71C67DEC7F7C3525C43A6
+      9359E46A32818C255519EB9C23C7C8EFE407B29F7C4B4E177B70A74891896411
+      B99B3492DA02F6719C7C41DE237B497F3945A69195E47672693157222B7E223B
+      C8EBA4AF942263C81AB2848CB228901D3F92F5E4DD5288A809B591492514C88E
+      F7C90AD26B43C4495D9DB56514C88CDFC823A4A318913AF216FCBB51C918204F
+      90370B11D133F001B9A3C212E9889307E0BFDD8C4542F01FB47B2A7DF6593148
+      EE25BB4C45DAE1BF5EFF8FA18FEA1CD2954B44CFC347B68EEAEAE7F2163B8E4D
+      19BD9E9BC899E144C693C3F0530B2B9174930887C2882713083B219B32AF9027
+      8713799BDC67EB4803F1281EACBF0B73273461FDC16D38DAD78BEA50B5ADDD27
+      480BE9CC1651DA7108FE836E472411C596E656CC183B0D6B0F6CC1973D11D455
+      594D083AC85CE2668ABC03FF8D602D24D2366B159AC74D476BE766ECEB3D605B
+      44712BD99B1651DAFD3D0ACB5E2B2DB2872C4C8BBC40D6D93E429944A264B244
+      F4F4E99D3C35A0228A951299C285EF60F121AF80C867125132B6A3147B2FA3C8
+      1F12D9C985C7022E724622EA2FCF09B8C86989286FB9CE740BA51CAEB1C800DA
+      9B56A3655C2356475E44476F2745EA8CB6556EE6C0383FF3444E72E17293B595
+      2FD5866B98665499AC8E68328A0D339663E69537E2F96FB6E2ABE35D181536FB
+      545D88F7C33197F1444E71E1B25C6BC61283A81F3D09CF352EC34586575599EF
+      25D517A3265C8DBF63E7104B0E1A9E988BEE9347B0B16BBBB7B6933B73361789
+      26626818733D36CE5C61DECED906AB98F98698F5C69371364B17861EE83E7504
+      AD9176AF0B605544917013DE15AEAD62F370733F29D1640C6B6E5ACAA4B1019B
+      0E6D47E4C461A3A6A53D9F8DF5794DD9B01FE389FC0CBFDC691492710D24147A
+      6B6D6E7A162DE31BF14CA40D1D3D9DC67733E484F3E98C7922FBB8708BE916F9
+      44B95FBF6F70E1E1808B781FC4A5F0BB8D4116E9914803FCD2BED5EA409945BC
+      8E95F6ACECF7DA008BAC4B77AC549C5E1550115520A7A64526936EFC7B742928
+      229F93F999C5874FC8C2008AE89CF7648AA872B73F60220753E71DCF2ED0ED26
+      77DA1479A9B9153797AEAE350FFEF8E37F2A8D1A8D5291CECAB8607F7C004BA6
+      2CC68289B3BD14E597B3475163AFD2A8B19287D27F0C55C456B777A78D23298D
+      57E6AB44F1FCE0056FD95268785BC3E0C7461251BC461EB522C30433C95F9849
+      A0A5D018C902A49A542E1135E44FC97C5B47B7188F63881633D2D0DBE8944C4B
+      A5CF3C2396915787FA47AEC15075B854DCBEADC20249B29C6C1B6E0593E1E91A
+      F232FC5B5A89500F5645C45D23AD94CF8401CD76D078FB15659450FAF114FC09
+      382346BE5338AE221BC8E2120BFC493691ADA61B143AA946832B4FC31F2DB299
+      686AA6903E74EAE8F5E4B361B1D39CD429D3DD51E2565FE03ECEC3CFF13E849F
+      B8FE55C84E8A154987BE3B1A5F994D6E80DF0455BD54AA93F925D4540C0D299F
+      20AADE7C9D92F8B5D813F80799B8FE69D3786E350000000049454E44AE426082}
+    OnClick = Image1Click
+  end
+  object DBGrid1: TDBGrid
+    Left = 0
+    Top = 0
+    Width = 985
+    Height = 484
+    Align = alTop
+    DataSource = DataSource1
+    TabOrder = 0
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'Tahoma'
+    TitleFont.Style = []
+    OnTitleClick = DBGrid1TitleClick
+    Columns = <
+      item
+        Alignment = taCenter
+        Expanded = False
+        FieldName = 'Para'
+        Width = 30
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'Code'
+        Visible = False
+      end
+      item
+        Expanded = False
+        FieldName = 'Monday'
+        Width = 114
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'Thuesday'
+        Width = 114
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'Wendsday'
+        Width = 114
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'Thursday'
+        Width = 114
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'Friday'
+        Width = 114
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = #1055#1086#1083#1077'1'
+        Visible = False
+      end
+      item
+        Expanded = False
+        FieldName = 'Grup'
+        Width = 100
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'Kathedra'
+        Width = 114
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'Faculty'
+        Width = 114
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'Teacher'
+        Visible = False
+      end>
+  end
+  object DBNavigator1: TDBNavigator
+    Left = 51
+    Top = 490
+    Width = 240
+    Height = 25
+    DataSource = DataSource1
+    TabOrder = 1
+    Visible = False
+  end
+  object Button1: TButton
+    Left = 864
+    Top = 535
+    Width = 55
+    Height = 38
+    Cursor = crHandPoint
+    Caption = 'Close'
+    TabOrder = 2
+    OnClick = Button1Click
+  end
+  object Button3: TButton
+    Left = 776
+    Top = 519
+    Width = 55
+    Height = 38
+    Cursor = crHandPoint
+    Caption = '+'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = 30
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 3
+    OnClick = Button3Click
+  end
+  object Button4: TButton
+    Left = 469
+    Top = 535
+    Width = 55
+    Height = 38
+    Cursor = crHandPoint
+    Caption = 'UPD'
+    TabOrder = 4
+    OnClick = Button4Click
+  end
+  object Button5: TButton
+    Left = 547
+    Top = 535
+    Width = 55
+    Height = 38
+    Cursor = crHandPoint
+    Caption = 'Add'
+    TabOrder = 5
+    OnClick = Button5Click
+  end
+  object ComboBox1: TComboBox
+    Left = 27
+    Top = 535
+    Width = 168
+    Height = 38
+    Cursor = crHandPoint
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = 30
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 6
+    Text = #1042#1080#1073#1110#1088#1082#1072
+    OnClick = ComboBox1Click
+    Items.Strings = (
+      #1043#1088#1091#1087#1072
+      #1050#1072#1092#1077#1076#1088#1072
+      #1060#1072#1082#1091#1083#1100#1090#1077#1090)
+  end
+  object Button6: TButton
+    Left = 672
+    Top = 535
+    Width = 55
+    Height = 38
+    Cursor = crHandPoint
+    Caption = '-'
+    TabOrder = 7
+    OnClick = Button6Click
+  end
+  object ComboBox2: TComboBox
+    Left = 201
+    Top = 535
+    Width = 184
+    Height = 38
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = 30
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 8
+    OnClick = ComboBox2Click
+  end
+  object ADOConnection1: TADOConnection
+    Connected = True
+    ConnectionString = 
+      'Provider=Microsoft.Jet.OLEDB.4.0;User ID=Admin;Data Source=C:\Us' +
+      'ers\dimon\Documents\Shedule_be.mdb;Mode=Share Deny None;Persist ' +
+      'Security Info=False;Jet OLEDB:System database="";Jet OLEDB:Regis' +
+      'try Path="";Jet OLEDB:Database Password="";Jet OLEDB:Engine Type' +
+      '=5;Jet OLEDB:Database Locking Mode=1;Jet OLEDB:Global Partial Bu' +
+      'lk Ops=2;Jet OLEDB:Global Bulk Transactions=1;Jet OLEDB:New Data' +
+      'base Password="";Jet OLEDB:Create System Database=False;Jet OLED' +
+      'B:Encrypt Database=False;Jet OLEDB:Don'#39't Copy Locale on Compact=' +
+      'False;Jet OLEDB:Compact Without Replica Repair=False;Jet OLEDB:S' +
+      'FP=False'
+    LoginPrompt = False
+    Mode = cmShareDenyNone
+    Provider = 'Microsoft.Jet.OLEDB.4.0'
+    Left = 760
+    Top = 408
+  end
+  object DataSource1: TDataSource
+    DataSet = ADOQuery1
+    Left = 848
+    Top = 408
+  end
+  object ADOQuery1: TADOQuery
+    Active = True
+    Connection = ADOConnection1
+    CursorType = ctStatic
+    Parameters = <>
+    SQL.Strings = (
+      'Select * From Shedule'
+      ''
+      'Order By Para ASC')
+    Left = 672
+    Top = 408
+  end
+end
