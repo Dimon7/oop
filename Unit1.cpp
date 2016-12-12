@@ -19,18 +19,14 @@ int Count;
 String and;
 String C;
 
-// ---------------------------------------------------------------------------
+
 __fastcall TForm1::TForm1(TComponent* Owner) : TForm(Owner) {
 }
 
-// ---------------------------------------------------------------------------
 void __fastcall TForm1::Button1Click(TObject *Sender) {
 
 	Form1->Close();
 }
-
-// ---------------------------------------------------------------------------
-//SORT
 void __fastcall TForm1::FormCreate(TObject *Sender)
 {
 ADOQuery1->Close();
@@ -43,18 +39,12 @@ ADOQuery1->Open();
 
 Label4->Caption = Query;
 }
-//---------------------------------------------------------------------------
-
 void __fastcall TForm1::Button3Click(TObject *Sender)
 {
 
 	Query += " AND ";
 	Label4->Caption = Query;
 }
-
-//---------------------------------------------------------------------------
-
-//clear
 void __fastcall TForm1::Button4Click(TObject *Sender)
 {
 	ADOQuery1->Close();
@@ -68,17 +58,12 @@ void __fastcall TForm1::Button4Click(TObject *Sender)
     Label4->Caption = Query;
 
 }
-//---------------------------------------------------------------------------
-
-//Додати новий запис
 void __fastcall TForm1::Button5Click(TObject *Sender)
 {
 
 	Form2->Show();
 
 }
-//---------------------------------------------------------------------------
-
 void __fastcall TForm1::ComboBox1Click(TObject *Sender)
 {
 
@@ -118,17 +103,11 @@ void __fastcall TForm1::ComboBox1Click(TObject *Sender)
 		ADOQuery1->Open();
 
 }
-//---------------------------------------------------------------------------
-
-//Sort
-
 void __fastcall TForm1::Button6Click(TObject *Sender)
 {
 
     DBNavigator1->BtnClick(nbDelete);
 }
-
-
 void __fastcall TForm1::FormKeyPress(TObject *Sender, System::WideChar &Key)
 {
 
@@ -136,9 +115,7 @@ void __fastcall TForm1::FormKeyPress(TObject *Sender, System::WideChar &Key)
 	if(Key == 27){
 		Button1->Click();
 	}
-}
-//---------------------------------------------------------------------------
-
+}//---------------------------------------------------------------------------
 void __fastcall TForm1::FormMouseMove(TObject *Sender, TShiftState Shift, int X, int Y)
 
 {
@@ -146,16 +123,11 @@ void __fastcall TForm1::FormMouseMove(TObject *Sender, TShiftState Shift, int X,
 	ReleaseCapture();
 	Perform(WM_SYSCOMMAND, SC_DRAGMOVE, 0);
 }
-//---------------------------------------------------------------------------
-
 void __fastcall TForm1::FormActivate(TObject *Sender)
 {
 	Count = DBGrid1->DataSource->DataSet->RecordCount;
 
 }
-//---------------------------------------------------------------------------
-
-
 void __fastcall TForm1::ComboBox2Click(TObject *Sender)
 {
 
@@ -185,11 +157,6 @@ void __fastcall TForm1::ComboBox2Click(TObject *Sender)
 	ADOQuery1->Open();
 
 }
-//---------------------------------------------------------------------------
-
-
-
-
 void __fastcall TForm1::DBGrid1TitleClick(TColumn *Column)
 {
 		String S = Column->Field->FullName;
@@ -200,6 +167,6 @@ void __fastcall TForm1::DBGrid1TitleClick(TColumn *Column)
 
 
 }
-//---------------------------------------------------------------------------
+
 
 

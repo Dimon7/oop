@@ -43,15 +43,10 @@ Form1->ADOQuery1->SQL->Add("INSERT INTO Shedule(Para, Monday, Thuesday, Wendsday
 	Form1->ADOQuery1->SQL->Add("Select * From Shedule Order By Para ASC;");
 	Form1->ADOQuery1->Open();
 }
-//---------------------------------------------------------------------------
-
-
 void __fastcall TForm2::Button2Click(TObject *Sender)
 {
 	Form2->Close();
 }
-//---------------------------------------------------------------------------
-
 void __fastcall TForm2::FormKeyPress(TObject *Sender, System::WideChar &Key)
 {
 
@@ -59,8 +54,6 @@ void __fastcall TForm2::FormKeyPress(TObject *Sender, System::WideChar &Key)
         Button1->Click();
 	}
 }
-//---------------------------------------------------------------------------
-
 void __fastcall TForm2::FormMouseMove(TObject *Sender, TShiftState Shift, int X, int Y)
 
 {
@@ -68,5 +61,4 @@ void __fastcall TForm2::FormMouseMove(TObject *Sender, TShiftState Shift, int X,
 	ReleaseCapture();
 	Perform(WM_SYSCOMMAND, SC_DRAGMOVE, 0);
 }
-//---------------------------------------------------------------------------
 
